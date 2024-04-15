@@ -224,6 +224,12 @@
   }
 }
 
+@media (max-width: 756px) {
+  .app_wrap header .container {
+    max-width: 90% !important;
+  }
+}
+
 @media (max-width: 480px) {
   .app_wrap header .header__two .menu a i {
     width: 35px;

@@ -16,8 +16,8 @@ import 'swiper/css/pagination';
 
 const Cateslider = () => {
     const breaks = {
-        '1024': {
-            slidesPerView: 4,
+        '768': {
+            slidesPerView: 3,
         }
     }
 
@@ -26,7 +26,7 @@ const Cateslider = () => {
     return (
         <div className="cateslider">
             <Container>
-                <Swiper slidesPerView={4} spaceBetween={24} breakpoints={breaks} modules={[Grid]}>
+                <Swiper slidesPerView={2} spaceBetween={24} breakpoints={breaks} modules={[Grid]}>
                     {
                         Shoppick[0].details.map((datanum)=>(
                             <SwiperSlide>

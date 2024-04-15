@@ -3,7 +3,16 @@
     .filter__category {
         list-style: none;
         gap: 5px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        @media (max-width: 460px) {
+            flex-direction: column;           
+        }
         li {
+            @media (max-width: 460px) {
+                width: 100%;           
+            }
             button {
                 display: block;
                 border: none;
@@ -12,6 +21,9 @@
                 text-align: center;
                 border-radius: 30px;
                 border: 1px solid #e5e5e5;
+                @media (max-width: 460px) {
+                    width: 100%;           
+                }
                 &.active {
                     background-color: #333;
                     color: #fff;
@@ -31,7 +43,12 @@
                         }
                         .swiper-slide {
                             margin-bottom: 15px;
-                            &:nth-child(4n) {
+                            &:nth-child(2n) {
+                                @media (max-width: 768px) {
+                                    margin-right: 0 !important;
+                                }
+                            }
+                            &:nth-child(3n) {
                                 @media (max-width: 1024px) {
                                     margin-right: 0 !important;
                                 }
@@ -68,6 +85,9 @@
                                     padding: 25px 20px;
                                     .pricewrap {
                                         gap: 4px;
+                                        @media (max-width: 364px) {
+                                            flex-direction: column;
+                                        }
                                         span {
                                             &.sales {
                                                 color: #ef3e43;
@@ -76,6 +96,9 @@
                                                 @media (max-width: 1024px) {
                                                     font-size: 16px;
                                                 }
+                                                @media (max-width: 364px) {
+                                                    font-size: 14px;
+                                                }
                                             }
                                             &.saled {
                                                 font-size: 18px;
@@ -83,6 +106,9 @@
                                                 font-weight: 600;
                                                 @media (max-width: 1024px) {
                                                     font-size: 16px;
+                                                }
+                                                @media (max-width: 364px) {
+                                                    font-size: 14px;
                                                 }
                                             }
                                             &.original {
