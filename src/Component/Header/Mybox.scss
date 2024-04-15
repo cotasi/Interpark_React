@@ -1,0 +1,158 @@
+.mybox {
+    position: absolute;
+    display: none;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #fafafa;
+    padding: 20px;
+    min-width: 25rem;
+    box-shadow: 0 .2rem 1.4rem 0 rgba(0,0,0,.178);
+    border-radius: 15px;
+    z-index: 50;
+    @media (max-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    &.on {
+        display: block;
+    }
+    > button {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    .point__area {
+        background-color: #fff;
+        box-shadow: 0 .2rem 1.4rem 0 rgba(0,0,0,.078);
+        padding-bottom: 10px;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .main__points {
+            padding: 15px 5px;
+            .ai__points {
+                width: 50%;
+                border-right: 1px solid rgba(0,0,0,.15);
+                .desc {
+                    display: flex;
+                    justify-content: center;
+                    span {
+                        margin-left: 0.15rem;
+                    }
+                }
+                .number {
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    font-weight: 800;
+                }
+            }
+            .nol__points {
+                width: 50%;
+                .desc {
+                    display: flex;
+                    justify-content: center;
+                    span {
+                        margin-left: 0.15rem;
+                    }
+                }
+                .number {
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    font-weight: 800;
+                }
+            }
+        }
+        .other__points {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            margin-top: 5px;
+            margin-bottom: 8px;
+            border-radius: 30px;
+            > div {
+                width: 33.333%;
+                span {
+                    font-size: 14px;
+                    &:first-child {
+                        margin-right: 0.35rem;
+                    }
+                }
+            }
+        }
+    }
+    .mypage__area {
+        background-color: #fff;
+        box-shadow: 0 .2rem 1.4rem 0 rgba(0,0,0,.178);
+        padding: 20px;
+        border-radius: 15px;
+        > h2 {
+            font-size: 16px;
+            padding-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            li {
+                a {
+                    width: 4rem;
+                    display: block;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                &:first-child {
+                    a {
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            background: url('../../assets/icon_tour.svg') no-repeat;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    a {
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            background: url('../../assets/icon_ticket.svg') no-repeat;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    a {
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            background: url('../../assets/icon_shopping.svg') no-repeat;
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    a {
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            background: url('../../assets/icon_book.svg') no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

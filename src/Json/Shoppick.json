@@ -1,0 +1,52 @@
+[
+    {
+        "type": "쎈 딜",
+        "details": [
+            {
+                "images": "./src/assets/Shoppick/Hotdeal/Donkatsu.jpg",
+                "original_price": "29900",
+                "saled_price": "20900",
+                "coupon_price": "12900",
+                "corporate": "유혜광",
+                "name": "수제 통등심돈까스 모듬플래터 생선까스 치킨까스",
+                "isSale": true
+            },
+            {
+                "images": "./src/assets/Shoppick/Hotdeal/Smalltomato.jpg",
+                "original_price": "24000",
+                "saled_price": "20000",
+                "coupon_price": "8900",
+                "corporate": "없음",
+                "name": "달콤한 스테피아 대추 방울 토마토 500g x 2팩",
+                "isSale": true
+            },
+            {
+                "images": "./src/assets/Shoppick/Hotdeal/guronsan.jpg",
+                "original_price": "25900",
+                "saled_price": "18900",
+                "coupon_price": "12900",
+                "corporate": "유혜광",
+                "name": "영진 구론산 스파클링/ 오리지날 150ml 30개",
+                "isSale": true
+            },
+            {
+                "images": "./src/assets/Shoppick/Hotdeal/Hetvan.jpg",
+                "original_price": "32570",
+                "saled_price": "27570",
+                "coupon_price": "12900",
+                "corporate": "유혜광",
+                "name": "햇반 쿡반 냉동 주먹밥 참치마요 주먹밥 X 4봉지 외",
+                "isSale": true
+            },
+            {
+                "images": "./src/assets/Shoppick/Hotdeal/aircon.jpg",
+                "original_price": "2235000",
+                "saled_price": "2139000",
+                "coupon_price": "12900",
+                "corporate": "유혜광",
+                "name": "수제 통등심돈까스 모듬플래터 생선까스 치킨까스",
+                "isSale": true
+            }
+        ]
+    }
+]
