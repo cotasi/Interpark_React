@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 
 import { Container } from 'react-bootstrap';
 
+import { useSelector } from 'react-redux';
+
 import { Link } from 'react-router-dom';
 
 import Shoppick from '../../Json/Shoppick.json';
@@ -14,21 +16,25 @@ import 'swiper/css/grid';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Cateslider = () => {
+const Cateslider = ({num}) => {
     const breaks = {
-        '768': {
+        '1024': {
             slidesPerView: 3,
+        },
+        '756': {
+            slidesPerView: 4.5
         }
+
     }
 
-    console.log(Shoppick);
+    const categoryok = useSelector((state)=>state.categorySlice);
 
     return (
-        <div className="cateslider">
+        <div className={`cateslider ${categoryok === Shoppick[num].type ? 'on': ''}`}>
             <Container>
-                <Swiper slidesPerView={2} spaceBetween={24} breakpoints={breaks} modules={[Grid]}>
+                <Swiper slidesPerView={2.5} spaceBetween={24} breakpoints={breaks} >
                     {
-                        Shoppick[0].details.map((datanum)=>(
+                        Shoppick[num].details.map((datanum)=>(
                             <SwiperSlide>
                                 <Link to="/">
                                     <div className="imgpart">

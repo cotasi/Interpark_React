@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 
 import Cateslider from './Cateslider';
-import Catesliders from './Catesliders';
+
+import { Categoryname } from '../../Store/Categories/category.type';
 
 import Shoppick from '../../Json/Shoppick.json';
 
@@ -53,7 +54,8 @@ const Categorycon = ({categorynames}) => {
 
     return (
         <div className="catecon">
-            {Shoppick && <Cateslider/>}
+            {Shoppick && <Cateslider num={0}/>}
+            {Shoppick && <Cateslider num={1} />}
         </div>
     );
 };

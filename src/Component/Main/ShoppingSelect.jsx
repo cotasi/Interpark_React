@@ -19,8 +19,10 @@ const ShoppingSelect = () => {
                 </p>
             </Title> 
             <FilterCategory /> 
-            <Categorycon categorynames={Categoryname}/>
-            <Link to="/shopping" className="shopping__home">쇼핑 홈 바로가기</Link>
+            <Categorycon />
+            <div id="shopinghome">
+                <Link to="/shopping" className="shopping__home">쇼핑 홈 바로가기</Link>
+            </div>
         </section>
     );
 };
